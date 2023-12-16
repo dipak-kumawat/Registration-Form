@@ -1,0 +1,22 @@
+.form{
+    width: 50%;
+
+
+}
+
+.form input{
+    width: 20rem;
+    height: 2rem;
+    margin-bottom: 1rem;
+}
+
+.form label{
+    font-size: 1.5rem;
+    font-weight: 600;
+
+}
+
+.form{
+    padding-bottom: 1rem;
+    margin: 1rem;
+}
