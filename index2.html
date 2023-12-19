@@ -29,8 +29,8 @@
 
           const emailPattern = /^[a-zA-Z0-9._%+-]+@gmail\.com$/;
 
-      if (name.length >= 0) {
-        errorMessage.innerText = "Please enter your name.";
+      if (name.length <= 5) {
+        errorMessage.innerText = "Please enter your Full name.";
       } else if (!emailPattern.test(email)) {
         errorMessage.innerText = "Please enter a valid Gmail address.";
       } else if (password.length < 8) {
@@ -44,32 +44,6 @@
       }
       }
 
-
-
-    //   function validateForm() {
-    //     const name = document.getElementById("name").value;
-    //     const email = document.getElementById("email").value;
-    //     const password = document.getElementById("password").value;
-    //     const errorMessage = document.getElementById("error-message");
-
-    //     // Regular expression to validate Gmail
-    //     const emailPattern = /^[a-zA-Z0-9._%+-]+@gmail\.com$/;
-
-    //     if (name.trim() === "") {
-    //       errorMessage.innerText = "Please enter your name.";
-    //     } else if (!emailPattern.test(email)) {
-    //       errorMessage.innerText = "Please enter a valid Gmail address.";
-    //     } else if (password.length < 8) {
-    //       errorMessage.innerText =
-    //         "Password must be at least 8 characters long.";
-    //     } else {
-    //       // Validation successful
-    //       errorMessage.innerText = "";
-    //       // Here, you might submit the form or perform other actions
-    //       // For example: document.getElementById('myForm').submit();
-    //       console.log("Form submitted successfully!");
-    //     }
-    //   }
     </script>
   </body>
 </html>
